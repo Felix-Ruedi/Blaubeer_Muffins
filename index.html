@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Der Titel Deiner Website</title>
+</head>
+<body>
+<header>
+  <h1>Muffin Rezepte Blog</h1>
+</header>
+<nav>
+  <ul>
+    <li><a title="Hier gelangst Du zur Startseite" href="index.html">Startseite</a></li>
+    <li><a title="Über mich" href="./me.html">Über mich</a></li>
+  </ul>
+</nav>
+<div class="muffins">
+  <h2><a href="#zutaten">Leckere Blaubeer-Muffins</a></h2>
+  <img src="./OIP.jpeg" alt="Blaubeer-Muffin" width="200">
+  <h3>Diese saftigen Blaubeer-Muffins sind perfekt für einen gemütlichen
+    Nachmittag oder zum Frühstück.</h3>
+</div>
+<div id="#zutaten" class="zutaten">
+  <ul>
+    <li>200g Mehl</li>
+    <li>100g Zucker</li>
+    <li>2 TL Backpulver</li>
+    <li>Alle Zutaten bereitlegen</li>
+    <li>Milch und Eier vermischen</li>
+    <li>1 Prise Salz</li>
+    <li>1 Ei</li>
+    <li>100ml Milch</li>
+    <li>50ml Pflanzenöl</li>
+    <li>150g frische Blaubeeren</li>
+  </ul>
+</div>
+<div class="zubereitung">
+  <h2>Zubereitung</h2>
+</div>
+<div class="angaben">
+  <h2>Nährwertangaben (pro Muffin):</h2>
+  <table border="1">
+    <tr>
+      <th>Nährwert</th>
+      <th>Menge</th>
+    </tr>
+    <tr>
+      <td>Kalorien</td>
+      <td>150 kcal</td>
+    </tr>
+    <tr>
+      <td>Fett</td>
+      <td>7 g</td>
+    </tr>
+    <tr>
+      <td>Kohlenhydrate</td>
+      <td>20 g</td>
+    </tr>
+    <tr>
+      <td>Eiweiß</td>
+      <td>3 g</td>
+    </tr>
+  </table>
+</div>
+<div class="Bewertung">
+  <h2>Bewertung</h2>
+  <form action="/bewertung" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="bewertung">Bewertung (1-5):</label><br>
+    <input type="number" id="bewertung"><br><br>
+    <label for="kommentar">Kommentar:</label><br>
+    <textarea id="kommentar" name="kommentar" rows="30" cols="60"></textarea><br><br>
+    <input type="submit" value="Bewertung abschicken">
+  </form>
+</div>
+</body>
+</html>
